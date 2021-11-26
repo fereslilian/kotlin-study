@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.ktor.app.StatisticTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-11-26T01:09:07" hostname="lilianferes" time="0.015">
+  <properties/>
+  <testcase name="when getting statistics from an empty Event list, it returns NotFoundException" classname="com.example.ktor.app.StatisticTest" time="0.003"/>
+  <testcase name="when getting statistics from a non empty Event list, it returns Statistic" classname="com.example.ktor.app.StatisticTest" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.ktor.ApplicationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-11-26T01:09:09" hostname="lilianferes" time="0.457">
+  <properties/>
+  <testcase name="when handling GET statistic, it returns the statistic and http status code accepted" classname="com.example.ktor.ApplicationTest" time="0.31"/>
+  <testcase name="when handling GET statistic and StatisticQuery throws NotFoundException, it returns http status code not found" classname="com.example.ktor.ApplicationTest" time="0.062"/>
+  <testcase name="when handling POST event, it calls perform on EventsStorage and returns http status code accepted" classname="com.example.ktor.ApplicationTest" time="0.084"/>
+  <system-out><![CDATA[2021-11-25 22:09:09.625 [Test worker] INFO  ktor.test - Autoreload is disabled because the development mode is off.
+2021-11-25 22:09:09.632 [Test worker] INFO  ktor.test - Application started in 0.068 seconds.
+2021-11-25 22:09:09.647 [Test worker] DEBUG i.m.i.i.JvmStaticMockFactory - Creating object mockk for StatisticQuery
+2021-11-25 22:09:09.647 [Test worker] TRACE i.m.i.i.JvmStaticMockFactory - Building object proxy for StatisticQuery hashcode=43cd8aef
+2021-11-25 22:09:09.647 [Test worker] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming [Ljava.lang.Class;@2d70574c
+2021-11-25 22:09:09.663 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Taking instance of class com.example.ktor.app.query.StatisticQuery itself because it is final.
+2021-11-25 22:09:09.664 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Attaching to object mock for class com.example.ktor.app.query.StatisticQuery
+2021-11-25 22:09:09.665 [Test worker] DEBUG io.mockk.impl.stub.CommonClearer - Clearing [StatisticQuery(object StatisticQuery)] mocks ClearOptions(answers=true, recordedCalls=true, childMocks=true, verificationMarks=true, exclusionRules=true)
+2021-11-25 22:09:09.666 [Test worker] TRACE i.m.i.recording.CommonCallRecorder - Starting stubbing
+2021-11-25 22:09:09.671 [Test worker] TRACE i.m.i.i.AbstractMockFactory - Building proxy for Statistic hashcode=6b91d6e
+2021-11-25 22:09:09.672 [Test worker] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming [Ljava.lang.Class;@2accb6cd
+2021-11-25 22:09:09.705 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Taking instance of class com.example.ktor.app.Statistic itself because it is final.
+2021-11-25 22:09:09.706 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Instantiating proxy for class com.example.ktor.app.Statistic via instantiator
+2021-11-25 22:09:09.706 [Test worker] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class com.example.ktor.app.Statistic
+2021-11-25 22:09:09.708 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Matcher map: {}
+2021-11-25 22:09:09.708 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Processing call #0: perform()
+2021-11-25 22:09:09.709 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Built matcher: StatisticQuery(object StatisticQuery).perform())
+2021-11-25 22:09:09.709 [Test worker] TRACE i.m.impl.recording.PermanentMocker - Child search key: StatisticQuery(object StatisticQuery).perform())
+2021-11-25 22:09:09.710 [Test worker] DEBUG i.m.i.i.AbstractMockFactory - Creating mockk for Statistic name=child of object StatisticQuery#3
+2021-11-25 22:09:09.710 [Test worker] TRACE i.m.i.i.AbstractMockFactory - Building proxy for Statistic hashcode=6b91d6e
+2021-11-25 22:09:09.710 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Taking instance of class com.example.ktor.app.Statistic itself because it is final.
+2021-11-25 22:09:09.710 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Instantiating proxy for class com.example.ktor.app.Statistic via instantiator
+2021-11-25 22:09:09.710 [Test worker] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class com.example.ktor.app.Statistic
+2021-11-25 22:09:09.711 [Test worker] TRACE i.m.impl.recording.PermanentMocker - Mocked permanently: StatisticQuery(object StatisticQuery).perform()
+2021-11-25 22:09:09.711 [Test worker] TRACE i.m.i.r.s.StubbingAwaitingAnswerState - Done stubbing. Still accepting additional answers
+2021-11-25 22:09:09.790 [DefaultDispatcher-worker-1 @request#1] DEBUG i.m.i.r.states.AnsweringState - Answering 10,0.7796950936,0.0473002568,2127711810,1.194727708E9 on StatisticQuery(object StatisticQuery).perform()
+2021-11-25 22:09:09.824 [Test worker] DEBUG i.m.i.i.JvmStaticMockFactory - Disposing object mockk for StatisticQuery hashcode=6b2d8d6b
+2021-11-25 22:09:09.824 [Test worker] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming back [class com.example.ktor.app.query.StatisticQuery]
+2021-11-25 22:09:09.824 [Test worker] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming [Ljava.lang.Class;@214b2bdd
+2021-11-25 22:09:09.848 [Test worker] INFO  ktor.test - Autoreload is disabled because the development mode is off.
+2021-11-25 22:09:09.848 [Test worker] INFO  ktor.test - Application started in 0.0 seconds.
+2021-11-25 22:09:09.849 [Test worker] DEBUG i.m.i.i.JvmStaticMockFactory - Creating object mockk for StatisticQuery
+2021-11-25 22:09:09.849 [Test worker] TRACE i.m.i.i.JvmStaticMockFactory - Building object proxy for StatisticQuery hashcode=43cd8aef
+2021-11-25 22:09:09.849 [Test worker] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming [Ljava.lang.Class;@331756d7
+2021-11-25 22:09:09.871 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Taking instance of class com.example.ktor.app.query.StatisticQuery itself because it is final.
+2021-11-25 22:09:09.871 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Attaching to object mock for class com.example.ktor.app.query.StatisticQuery
+2021-11-25 22:09:09.873 [Test worker] DEBUG io.mockk.impl.stub.CommonClearer - Clearing [StatisticQuery(object StatisticQuery)] mocks ClearOptions(answers=true, recordedCalls=true, childMocks=true, verificationMarks=true, exclusionRules=true)
+2021-11-25 22:09:09.874 [Test worker] TRACE i.m.i.recording.CommonCallRecorder - Starting stubbing
+2021-11-25 22:09:09.875 [Test worker] TRACE i.m.i.i.AbstractMockFactory - Building proxy for Statistic hashcode=6b91d6e
+2021-11-25 22:09:09.876 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Taking instance of class com.example.ktor.app.Statistic itself because it is final.
+2021-11-25 22:09:09.876 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Instantiating proxy for class com.example.ktor.app.Statistic via instantiator
+2021-11-25 22:09:09.876 [Test worker] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class com.example.ktor.app.Statistic
+2021-11-25 22:09:09.877 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Matcher map: {}
+2021-11-25 22:09:09.877 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Processing call #0: perform()
+2021-11-25 22:09:09.877 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Built matcher: StatisticQuery(object StatisticQuery).perform())
+2021-11-25 22:09:09.878 [Test worker] TRACE i.m.impl.recording.PermanentMocker - Child search key: StatisticQuery(object StatisticQuery).perform())
+2021-11-25 22:09:09.878 [Test worker] DEBUG i.m.i.i.AbstractMockFactory - Creating mockk for Statistic name=child of object StatisticQuery#4
+2021-11-25 22:09:09.878 [Test worker] TRACE i.m.i.i.AbstractMockFactory - Building proxy for Statistic hashcode=6b91d6e
+2021-11-25 22:09:09.878 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Taking instance of class com.example.ktor.app.Statistic itself because it is final.
+2021-11-25 22:09:09.878 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Instantiating proxy for class com.example.ktor.app.Statistic via instantiator
+2021-11-25 22:09:09.879 [Test worker] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class com.example.ktor.app.Statistic
+2021-11-25 22:09:09.879 [Test worker] TRACE i.m.impl.recording.PermanentMocker - Mocked permanently: StatisticQuery(object StatisticQuery).perform()
+2021-11-25 22:09:09.879 [Test worker] TRACE i.m.i.r.s.StubbingAwaitingAnswerState - Done stubbing. Still accepting additional answers
+2021-11-25 22:09:09.885 [DefaultDispatcher-worker-4 @request#5] DEBUG i.m.i.r.states.AnsweringState - Throwing io.ktor.features.NotFoundException: No statistic for last period! on StatisticQuery(object StatisticQuery).perform()
+2021-11-25 22:09:09.887 [Test worker] DEBUG i.m.i.i.JvmStaticMockFactory - Disposing object mockk for StatisticQuery hashcode=6b2d8d6b
+2021-11-25 22:09:09.887 [Test worker] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming back [class com.example.ktor.app.query.StatisticQuery]
+2021-11-25 22:09:09.887 [Test worker] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming [Ljava.lang.Class;@4a7c6221
+2021-11-25 22:09:09.912 [Test worker] INFO  ktor.test - Autoreload is disabled because the development mode is off.
+2021-11-25 22:09:09.913 [Test worker] INFO  ktor.test - Application started in 0.002 seconds.
+2021-11-25 22:09:09.914 [Test worker] DEBUG i.m.i.i.JvmStaticMockFactory - Creating object mockk for EventsStorage
+2021-11-25 22:09:09.914 [Test worker] TRACE i.m.i.i.JvmStaticMockFactory - Building object proxy for EventsStorage hashcode=58925421
+2021-11-25 22:09:09.915 [Test worker] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming [Ljava.lang.Class;@dbe75cd
+2021-11-25 22:09:09.938 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Taking instance of class com.example.ktor.app.command.EventsStorage itself because it is final.
+2021-11-25 22:09:09.939 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Attaching to object mock for class com.example.ktor.app.command.EventsStorage
+2021-11-25 22:09:09.940 [Test worker] DEBUG io.mockk.impl.stub.CommonClearer - Clearing [EventsStorage(object EventsStorage)] mocks ClearOptions(answers=true, recordedCalls=true, childMocks=true, verificationMarks=true, exclusionRules=true)
+2021-11-25 22:09:09.941 [Test worker] TRACE i.m.i.recording.CommonCallRecorder - Starting stubbing
+2021-11-25 22:09:09.948 [Test worker] TRACE i.m.i.i.AbstractMockFactory - Building proxy for Unit hashcode=37ed9e84
+2021-11-25 22:09:09.948 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Taking instance of class kotlin.Unit itself because it is final.
+2021-11-25 22:09:09.948 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Instantiating proxy for class kotlin.Unit via instantiator
+2021-11-25 22:09:09.948 [Test worker] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class kotlin.Unit
+2021-11-25 22:09:09.949 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Matcher map: {[2f6e362bc5d4d455]=any()}
+2021-11-25 22:09:09.950 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Processing call #0: perform(String)
+2021-11-25 22:09:09.950 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Signature for 0 argument of perform(String): [2f6e362bc5d4d455]
+2021-11-25 22:09:09.951 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Built matcher: EventsStorage(object EventsStorage).perform(any()))
+2021-11-25 22:09:09.952 [Test worker] TRACE i.m.impl.recording.PermanentMocker - Child search key: EventsStorage(object EventsStorage).perform(any()))
+2021-11-25 22:09:09.953 [Test worker] DEBUG i.m.i.i.AbstractMockFactory - Creating mockk for Unit name=child of object EventsStorage#5
+2021-11-25 22:09:09.953 [Test worker] TRACE i.m.i.i.AbstractMockFactory - Building proxy for Unit hashcode=37ed9e84
+2021-11-25 22:09:09.953 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Taking instance of class kotlin.Unit itself because it is final.
+2021-11-25 22:09:09.954 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Instantiating proxy for class kotlin.Unit via instantiator
+2021-11-25 22:09:09.954 [Test worker] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class kotlin.Unit
+2021-11-25 22:09:09.955 [Test worker] TRACE i.m.impl.recording.PermanentMocker - Mocked permanently: EventsStorage(object EventsStorage).perform(any())
+2021-11-25 22:09:09.955 [Test worker] TRACE i.m.i.r.s.StubbingAwaitingAnswerState - Done stubbing. Still accepting additional answers
+2021-11-25 22:09:09.963 [DefaultDispatcher-worker-4 @request#9] DEBUG i.m.i.r.states.AnsweringState - Answering kotlin.Unit on EventsStorage(object EventsStorage).perform()
+2021-11-25 22:09:09.969 [Test worker] DEBUG i.m.i.i.JvmStaticMockFactory - Disposing object mockk for EventsStorage hashcode=2c3d5e59
+2021-11-25 22:09:09.969 [Test worker] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming back [class com.example.ktor.app.command.EventsStorage]
+2021-11-25 22:09:09.969 [Test worker] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming [Ljava.lang.Class;@72a6f5b5
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.ktor.app.command.EventsStorageTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-26T01:09:07" hostname="lilianferes" time="1.609">
+  <properties/>
+  <testcase name="when performing events storage, it calls Events to do mapping and StoredEvents to add events" classname="com.example.ktor.app.command.EventsStorageTest" time="1.609"/>
+  <system-out><![CDATA[2021-11-25 22:09:08.086 [Test worker] TRACE io.mockk.impl.JvmMockKGateway - Starting JVM MockK implementation. Java version = 11.0.11. 
+2021-11-25 22:09:08.388 [Test worker] TRACE i.m.proxy.jvm.JvmMockKAgentFactory - Byte buddy agent installed
+2021-11-25 22:09:08.430 [Test worker] TRACE i.m.p.jvm.dispatcher.BootJarLoader - Bootstrap class loaded io.mockk.proxy.jvm.dispatcher.JvmMockKDispatcher
+2021-11-25 22:09:08.432 [Test worker] TRACE i.m.p.jvm.dispatcher.BootJarLoader - Bootstrap class loaded io.mockk.proxy.jvm.dispatcher.JvmMockKWeakMap
+2021-11-25 22:09:08.434 [Test worker] TRACE i.m.p.jvm.dispatcher.BootJarLoader - Bootstrap class loaded io.mockk.proxy.jvm.dispatcher.JvmMockKWeakMap$StrongKey
+2021-11-25 22:09:08.435 [Test worker] TRACE i.m.p.jvm.dispatcher.BootJarLoader - Bootstrap class loaded io.mockk.proxy.jvm.dispatcher.JvmMockKWeakMap$WeakKey
+2021-11-25 22:09:08.618 [Test worker] DEBUG i.m.i.i.JvmStaticMockFactory - Creating object mockk for Companion
+2021-11-25 22:09:08.621 [Test worker] TRACE i.m.i.i.JvmStaticMockFactory - Building object proxy for Companion hashcode=4b7983a3
+2021-11-25 22:09:08.625 [Test worker] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming [Ljava.lang.Class;@75b8e544
+2021-11-25 22:09:08.823 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Taking instance of class com.example.ktor.app.Event$Companion itself because it is final.
+2021-11-25 22:09:08.824 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Attaching to object mock for class com.example.ktor.app.Event$Companion
+2021-11-25 22:09:09.298 [Test worker] DEBUG io.mockk.impl.stub.CommonClearer - Clearing [Companion(object Companion)] mocks ClearOptions(answers=true, recordedCalls=true, childMocks=true, verificationMarks=true, exclusionRules=true)
+2021-11-25 22:09:09.301 [Test worker] DEBUG i.m.i.i.JvmStaticMockFactory - Creating object mockk for StoredEvents
+2021-11-25 22:09:09.301 [Test worker] TRACE i.m.i.i.JvmStaticMockFactory - Building object proxy for StoredEvents hashcode=6cecaf87
+2021-11-25 22:09:09.302 [Test worker] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming [Ljava.lang.Class;@3c8b0392
+2021-11-25 22:09:09.332 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Taking instance of class com.example.ktor.app.StoredEvents itself because it is final.
+2021-11-25 22:09:09.332 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Attaching to object mock for class com.example.ktor.app.StoredEvents
+2021-11-25 22:09:09.333 [Test worker] DEBUG io.mockk.impl.stub.CommonClearer - Clearing [StoredEvents(object StoredEvents)] mocks ClearOptions(answers=true, recordedCalls=true, childMocks=true, verificationMarks=true, exclusionRules=true)
+2021-11-25 22:09:09.339 [Test worker] TRACE i.m.i.recording.CommonCallRecorder - Starting stubbing
+2021-11-25 22:09:09.404 [Test worker] TRACE i.m.i.instantiation.JvmInstantiator - Building empty instance void
+2021-11-25 22:09:09.405 [Test worker] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class java.lang.Void
+2021-11-25 22:09:09.412 [Test worker] TRACE i.m.i.i.AbstractMockFactory - Building proxy for Unit hashcode=155571e3
+2021-11-25 22:09:09.413 [Test worker] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming [Ljava.lang.Class;@7637840d
+2021-11-25 22:09:09.431 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Taking instance of class kotlin.Unit itself because it is final.
+2021-11-25 22:09:09.431 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Instantiating proxy for class kotlin.Unit via instantiator
+2021-11-25 22:09:09.431 [Test worker] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class kotlin.Unit
+2021-11-25 22:09:09.438 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Matcher map: {}
+2021-11-25 22:09:09.439 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Processing call #0: add(List)
+2021-11-25 22:09:09.444 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Signature for 0 argument of add(List): [Ref(EmptyList@395309fe)]
+2021-11-25 22:09:09.447 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Built matcher: StoredEvents(object StoredEvents).add(eq([])))
+2021-11-25 22:09:09.451 [Test worker] TRACE i.m.impl.recording.PermanentMocker - Child search key: StoredEvents(object StoredEvents).add(eq([])))
+2021-11-25 22:09:09.454 [Test worker] DEBUG i.m.i.i.AbstractMockFactory - Creating mockk for Unit name=child of object StoredEvents#1
+2021-11-25 22:09:09.454 [Test worker] TRACE i.m.i.i.AbstractMockFactory - Building proxy for Unit hashcode=155571e3
+2021-11-25 22:09:09.455 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Taking instance of class kotlin.Unit itself because it is final.
+2021-11-25 22:09:09.455 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Instantiating proxy for class kotlin.Unit via instantiator
+2021-11-25 22:09:09.455 [Test worker] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class kotlin.Unit
+2021-11-25 22:09:09.457 [Test worker] TRACE i.m.impl.recording.PermanentMocker - Mocked permanently: StoredEvents(object StoredEvents).add(eq([]))
+2021-11-25 22:09:09.463 [Test worker] TRACE i.m.i.r.s.StubbingAwaitingAnswerState - Done stubbing. Still accepting additional answers
+2021-11-25 22:09:09.463 [Test worker] DEBUG i.m.i.i.AbstractMockFactory - Creating mockk for Unit name=#2
+2021-11-25 22:09:09.464 [Test worker] TRACE i.m.i.i.AbstractMockFactory - Building proxy for Unit hashcode=45877b33
+2021-11-25 22:09:09.464 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Taking instance of class kotlin.Unit itself because it is final.
+2021-11-25 22:09:09.464 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Instantiating proxy for class kotlin.Unit via instantiator
+2021-11-25 22:09:09.464 [Test worker] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class kotlin.Unit
+2021-11-25 22:09:09.466 [Test worker] TRACE i.m.i.recording.CommonCallRecorder - Starting stubbing
+2021-11-25 22:09:09.482 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Matcher map: {}
+2021-11-25 22:09:09.483 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Processing call #0: mapToEvents(String)
+2021-11-25 22:09:09.483 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Signature for 0 argument of mapToEvents(String): [1607341341814,0.0442672968,1282509067
+1607341339814,0.0473002568,1785397644]
+2021-11-25 22:09:09.484 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Built matcher: Companion(object Companion).mapToEvents(eq(1607341341814,0.0442672968,1282509067
+1607341339814,0.0473002568,1785397644)))
+2021-11-25 22:09:09.485 [Test worker] TRACE i.m.impl.recording.PermanentMocker - Mocked permanently: Companion(object Companion).mapToEvents(eq(1607341341814,0.0442672968,1282509067
+1607341339814,0.0473002568,1785397644))
+2021-11-25 22:09:09.485 [Test worker] TRACE i.m.i.r.s.StubbingAwaitingAnswerState - Done stubbing. Still accepting additional answers
+2021-11-25 22:09:09.489 [Test worker] DEBUG i.m.i.r.states.AnsweringState - Answering [] on Companion(object Companion).mapToEvents(1607341341814,0.0442672968,1282509067
+1607341339814,0.0473002568,1785397644)
+2021-11-25 22:09:09.490 [Test worker] DEBUG i.m.i.r.states.AnsweringState - Answering kotlin.Unit on StoredEvents(object StoredEvents).add([])
+2021-11-25 22:09:09.493 [Test worker] TRACE i.m.i.recording.CommonCallRecorder - Starting verification
+2021-11-25 22:09:09.495 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Matcher map: {}
+2021-11-25 22:09:09.495 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Processing call #0: mapToEvents(String)
+2021-11-25 22:09:09.495 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Signature for 0 argument of mapToEvents(String): [1607341341814,0.0442672968,1282509067
+1607341339814,0.0473002568,1785397644]
+2021-11-25 22:09:09.496 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Built matcher: Companion(object Companion).mapToEvents(eq(1607341341814,0.0442672968,1282509067
+1607341339814,0.0473002568,1785397644)))
+2021-11-25 22:09:09.496 [Test worker] TRACE i.m.impl.recording.PermanentMocker - Mocked permanently: Companion(object Companion).mapToEvents(eq(1607341341814,0.0442672968,1282509067
+1607341339814,0.0473002568,1785397644))
+2021-11-25 22:09:09.502 [Test worker] TRACE i.m.i.r.states.RecordingState - Done verification. Outcome: OK(verifiedCalls=[Companion(object Companion).mapToEvents(1607341341814,0.0442672968,1282509067
+1607341339814,0.0473002568,1785397644)])
+2021-11-25 22:09:09.503 [Test worker] TRACE i.m.i.recording.CommonCallRecorder - Starting verification
+2021-11-25 22:09:09.504 [Test worker] TRACE i.m.i.i.AbstractMockFactory - Building proxy for Unit hashcode=155571e3
+2021-11-25 22:09:09.505 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Taking instance of class kotlin.Unit itself because it is final.
+2021-11-25 22:09:09.505 [Test worker] TRACE io.mockk.proxy.jvm.ProxyMaker - Instantiating proxy for class kotlin.Unit via instantiator
+2021-11-25 22:09:09.505 [Test worker] TRACE i.m.proxy.jvm.ObjenesisInstantiator - Creating new empty instance of class kotlin.Unit
+2021-11-25 22:09:09.506 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Matcher map: {}
+2021-11-25 22:09:09.506 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Processing call #0: add(List)
+2021-11-25 22:09:09.506 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Signature for 0 argument of add(List): [Ref(EmptyList@395309fe)]
+2021-11-25 22:09:09.507 [Test worker] TRACE i.m.i.r.SignatureMatcherDetector - Built matcher: StoredEvents(object StoredEvents).add(eq([])))
+2021-11-25 22:09:09.508 [Test worker] TRACE i.m.impl.recording.PermanentMocker - Child search key: StoredEvents(object StoredEvents).add(eq([])))
+2021-11-25 22:09:09.508 [Test worker] TRACE i.m.impl.recording.PermanentMocker - Mocked permanently: StoredEvents(object StoredEvents).add(eq([]))
+2021-11-25 22:09:09.509 [Test worker] TRACE i.m.i.r.states.RecordingState - Done verification. Outcome: OK(verifiedCalls=[StoredEvents(object StoredEvents).add([])])
+2021-11-25 22:09:09.511 [Test worker] DEBUG i.m.i.i.JvmStaticMockFactory - Disposing object mockk for Companion hashcode=2593bb17
+2021-11-25 22:09:09.512 [Test worker] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming back [class com.example.ktor.app.Event$Companion]
+2021-11-25 22:09:09.512 [Test worker] TRACE i.m.p.j.t.JvmInlineInstrumentation - Retransforming [Ljava.lang.Class;@45e49f0e
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
